@@ -1,0 +1,14 @@
+<html>
+<head>
+</head>
+<body>
+  <form action= "/search">
+    <input type= "text" name= "search" placeholder= "search">
+  </form>
+  <% if images %>
+  <% images.each do |image| %>
+  <img src= <%= image %>> </img>
+  <% end %>
+  <% end %>
+</body>
+</html>
